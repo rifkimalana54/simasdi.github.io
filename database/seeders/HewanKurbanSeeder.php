@@ -16,28 +16,47 @@ class HewanKurbanSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('type_hewans')->insert([
-            "type" => "Sapi Super",
-            "harga" => "4500000",
-            "user_id" => 1
+        DB::table('settings')->insert([
+            "alamat" => "Jl.Syekh Nurjati Wanasaba Kidul",
+            "email" => "simasdi@gmail.com",
+            "no_telepon" => "085314472422",
+            "twitter" => "-",
+            "facebook" => "-",
+            "instagram" => "-",
+            "whatsapp" => "-",
+            "visi" => "-",
+            "misi" => "-",
+            "judul1" => "-",
+            "kotak1" => "-",
+            "judul2" => "-",
+            "kotak2" => "-",
+            "judul3" => "-",
+            "kotak3" => "-",
+            "judul4" => "-",
+            "kotak4" => "-",
         ]);
+        // DB::table('type_hewans')->insert([
+        //     "type" => "Sapi Super",
+        //     "harga" => "4500000",
+        //     "user_id" => 1
+        // ]);
 
-        DB::table('type_hewans')->insert([
-            'type' => 'Sapi Sedang',
-            "harga" => "4000000",
-            "user_id" => 1
-        ]);
-        DB::table('type_hewans')->insert([
-            'type' => 'Sapi Biasa',
-            "harga" => "3500000",
-            "user_id" => 1
-        ]);
+        // DB::table('type_hewans')->insert([
+        //     'type' => 'Sapi Sedang',
+        //     "harga" => "4000000",
+        //     "user_id" => 1
+        // ]);
+        // DB::table('type_hewans')->insert([
+        //     'type' => 'Sapi Biasa',
+        //     "harga" => "3500000",
+        //     "user_id" => 1
+        // ]);
 
-        DB::table('type_hewans')->insert([
-            'type' => 'Kambing',
-            "harga" => "3500000",
-            "user_id" => 1
-        ]);
+        // DB::table('type_hewans')->insert([
+        //     'type' => 'Kambing',
+        //     "harga" => "3500000",
+        //     "user_id" => 1
+        // ]);
 
         // $faker = Faker::create('id_ID');
 
