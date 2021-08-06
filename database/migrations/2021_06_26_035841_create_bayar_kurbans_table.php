@@ -15,7 +15,7 @@ class CreateBayarKurbansTable extends Migration
     {
         Schema::create('bayar_kurbans', function (Blueprint $table) {
             $table->id();
-            $table->string('bayar');
+            $table->integer('bayar');
 
             $table->unsignedBigInteger('sohibul_kurban_id');
             $table->foreign('sohibul_kurban_id')->references('id')->on('sohibul_kurbans')->onDelete('cascade');
