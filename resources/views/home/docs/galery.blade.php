@@ -30,5 +30,5 @@
     
 @endsection
 @section('js')
-    <script src="js/home-galery.js"></script>
+    <script src="{{url('js/home-galery.js')"></script>
 @endsection
