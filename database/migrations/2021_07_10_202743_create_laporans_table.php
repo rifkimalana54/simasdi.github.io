@@ -18,8 +18,8 @@ class CreateLaporansTable extends Migration
             $table->string('dari')->nullable();
             $table->string('deskripsi')->nullable();
             $table->string('kebutuhan')->nullable();
-            $table->string('pemasukan')->nullable();
-            $table->string('pengeluaran')->nullable();
+            $table->integer('pemasukan')->nullable();
+            $table->integer('pengeluaran')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

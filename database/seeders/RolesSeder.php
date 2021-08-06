@@ -14,25 +14,16 @@ class RolesSeder extends Seeder
      */
     public function run()
     {
-        // DB::table('roles')->insert([
-        //     'name' => 'admin'
-        // ]);
-
-        // DB::table('roles')->insert([
-        //     'name' => 'sekretaris'
-        // ]);
-
-        // DB::table('roles')->insert([
-        //     'name' => 'irmas'
-        // ]);
-        DB::table('role_users')->insert([
-            'user_id' => 1,
-            'role_id' => 1,
+        DB::table('roles')->insert([
+            'name' => 'admin'
         ]);
 
-        DB::table('role_users')->insert([
-            'user_id' => 2,
-            'role_id' => 2,
+        DB::table('roles')->insert([
+            'name' => 'sekretaris'
+        ]);
+
+        DB::table('roles')->insert([
+            'name' => 'irmas'
         ]);
     }
 }

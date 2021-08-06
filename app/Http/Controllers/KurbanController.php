@@ -95,7 +95,7 @@ class KurbanController extends Controller
                 return $s->type_hewans->type;
             })
             ->addColumn('harga', function ($s) {
-                return $s->type_hewans->harga;
+                return 'Rp.' . number_format($s->type_hewans->harga);
             })
             ->addColumn('detail', function ($s) {
                 return '<center><a href="/halaman-sohibul-kurban/' . $s->id . '"><b style="font-size: 25px;">&raquo</b></a></center>';

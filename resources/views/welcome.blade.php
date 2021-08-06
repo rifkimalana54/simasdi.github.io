@@ -203,8 +203,8 @@
                         @php
                             use App\Models\Laporan;
                             
-                            $pemasukans = Laporan::SUM('pemasukan');
-                            $pengeluarans = Laporan::SUM('pengeluaran');
+                            $pemasukans = Laporan::sum('pemasukan');
+                            $pengeluarans = Laporan::sum('pengeluaran');
                             $total = $pemasukans - $pengeluarans;
                         @endphp
                         {{number_format($total)}}

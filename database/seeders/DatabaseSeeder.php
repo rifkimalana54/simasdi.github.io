@@ -17,5 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesSeder::class);
         $this->call(HewanKurbanSeeder::class);
         $this->call(CreateUserSeder::class);
+        $this->call(SettingSeder::class);
+        $this->call(RolesUserSeder::class);
     }
 }
