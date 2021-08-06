@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Validator;
 use App\Models\TypeHewan;
 use Illuminate\Http\Request;
-use App\Models\Sohibulkurban;
+use App\Models\SohibulKurban;
 use Yajra\Datatables\Datatables;
 use Illuminate\Support\Facades\Auth;
 
