@@ -88,7 +88,7 @@ class KurbanController extends Controller
 
     public function getkurbans()
     {
-        $datakurbans = Sohibulkurban::with('type_hewans')->get();
+        $datakurbans = SohibulKurban::with('type_hewans')->get();
 
         return Datatables::of($datakurbans)
             ->addColumn('type', function ($s) {
