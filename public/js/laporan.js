@@ -167,8 +167,8 @@ $(document).ready(function() {
                     $('.close-pengeluaran').click();
                     $('#err-close').click();
                     $('#success').html('<div class="alert alert-success"><button type="button" class="close" id="success-close" data-dismiss="alert">x</button><b>'+data.success+'</b></div>');
-                    $("#kbutuhan-pengeluaran").val("");
-                    $("#deskrispi-pengeluaran").val("");
+                    $("#kebutuhan-pengeluaran").val("");
+                    $("#deskripsi-pengeluaran").val("");
                     $("#jumlah-pengeluaran").val("");
                     swal({
                         title: "Berhasil Membuat Laporan Pengeluaran!",
